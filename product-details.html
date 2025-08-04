@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Phkar Daek</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="assets/logo.png" alt="New Fashion Logo" class="h-10 w-10 object-contain rounded-full shadow" />
+                <span class="text-2xl font-bold text-pink-600 hidden sm:inline">Phkar Daek</span>
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-pink-600">Home</a></li>
+                    <li><a href="index.html#shop" class="hover:text-pink-600">Shop</a></li>
+                    <li><a href="index.html#about" class="hover:text-pink-600">About</a></li>
+                    <li><a href="index.html#contact" class="hover:text-pink-600">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-10 items-center md:items-start">
+                <!-- Product Images Gallery -->
+                <div class="flex-shrink-0 w-full md:w-1/2 flex flex-col items-center">
+                    <div class="w-80 h-[28rem] mb-4 relative">
+                        <img id="mainImage" src="assets/dress01.jpg" alt="Product Image" class="w-full h-full object-cover rounded-lg shadow-lg transition duration-300" />
+                    </div>
+                    <div class="flex gap-3 justify-center">
+                        <img onclick="document.getElementById('mainImage').src='assets/dress01.jpg'" src="assets/dress01.jpg" alt="Summer Dress 1" class="w-20 h-24 object-cover rounded cursor-pointer border-2 border-pink-400" />
+                        <img onclick="document.getElementById('mainImage').src='assets/dress02.jpg'" src="assets/dress02.jpg" alt="Summer Dress 2" class="w-20 h-24 object-cover rounded cursor-pointer border-2 border-transparent hover:border-pink-400" />
+                        <img onclick="document.getElementById('mainImage').src='assets/dress03.jpg'" src="assets/dress03.jpg" alt="Summer Dress 3" class="w-20 h-24 object-cover rounded cursor-pointer border-2 border-transparent hover:border-pink-400" />
+                    </div>
+                </div>
+                <!-- Product Info -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-2">Summer Dress</h2>
+                    <p class="text-pink-600 text-2xl font-bold mb-4">$49.99</p>
+                    <p class="text-gray-600 mb-6">Lightweight floral dress perfect for sunny days and casual outings. Made from premium cotton blend for comfort and breathability. Available in multiple sizes and colors.</p>
+                    <ul class="mb-6 list-disc list-inside text-gray-500">
+                        <li>Material: Cotton Blend</li>
+                        <li>Available Sizes: S, M, L, XL</li>
+                        <li>Colors: Pink, Blue, Yellow</li>
+                        <li>Care: Machine wash cold</li>
+                    </ul>
+                    <div class="flex gap-4">
+                        <button class="bg-pink-600 text-white px-6 py-3 rounded hover:bg-pink-700 transition font-semibold">Contact to Buy</button>
+                        <a href="index.html#shop" class="bg-gray-200 text-gray-700 px-6 py-3 rounded hover:bg-gray-300 transition font-semibold">Back to Shop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 mt-12 shadow-inner">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            &copy; 2025 New Fashion. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
